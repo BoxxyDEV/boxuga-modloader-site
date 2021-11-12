@@ -6,6 +6,10 @@ background-color: #333;
 font-family: 'Montserrat', sans-serif;
 }
 
+a {
+color: white;
+}
+
 .coolbar { /* navbar */
 overflow: hidden;
 background-color: black;
