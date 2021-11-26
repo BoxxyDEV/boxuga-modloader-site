@@ -48,6 +48,7 @@ body {
 }
 .contentsections a {
     color: white;
+    text-decoration: none;
 }
 
 .contentsections h1 {
