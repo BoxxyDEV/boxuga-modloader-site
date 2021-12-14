@@ -56,10 +56,6 @@ body {
 }
 
 
-.video {
-    z-index: -99;
-    position:fixed;
-}
 
 .video iframe {
     width: 100vw;
@@ -124,3 +120,8 @@ body {
         text-decoration:line-through;
         background-color: crimson;
     }
+
+  
+marquee {
+  background-color: #333;
+}
