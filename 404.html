@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Something went wrong</title>
+        <link rel="stylesheet" href="/cool.css">
+    </head>
+    <body style="background-image: none; background: slategray;">
+        <center>
+            <div style="color: limegreen;">
+                <h1>Boxuga Loader - 404</h1>
+            </div>
+            <h3 id="filepath"></h3>
+            <h3>Maybe you targeted the wrong server or misspelled something</h3>
+            <button onclick="document.location('http://boxuga.ml/')">Go to the root</button>
+        </center>
+    </body>
+    <script type="text/javascript">
+    var file = document.getElementById('filepath');
+    file.innerText = "The File (" + document.location + ") does not Exist";
+    </script>
+</html>
