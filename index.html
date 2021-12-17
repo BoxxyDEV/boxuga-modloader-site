@@ -1,14 +1,17 @@
+
 <html>
     <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Boxuga Loader</title>
-    <link rel="stylesheet" href="/cool.css">
+    <link rel="stylesheet" href="http://boxuga.ml/cool.css">
     <meta title="Boxuga Loader">
     <meta property="og:description" content="The offical site of boxuga loader">
     <meta property="og:title" content="Boxuga Loader">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 <body>
-    <div class="topbarmc">
+    <div class="topbarmc" id="topbarmc">
         <a class="first" href="http://boxuga.ml/#">Boxuga Loader</a>
         <a href="http://boxuga.ml/installation">Installation</a>
         <div id="Discord">
@@ -24,7 +27,7 @@
             </div>
         </div>
     </div>
-    <marquee>GTA Online has been shut down by Rockstar Games on the 16/12/21<div id="UnsupportedMarquee"><button onclick="window.open('https://www.rockstargames.com/newswire/article/51989315o2aa3a/gta-online-for-playstation-3-and-xbox-360-will-shut-down-on-december-1', 'target')">Read Rockstar Newswire Article</button></div></marquee>
+    <marquee>GTA Online has been shut down by Rockstar Games on the 16/12/21<button id="marqueebutton1" onclick="window.open('https://www.rockstargames.com/newswire/article/51989315o2aa3a/gta-online-for-playstation-3-and-xbox-360-will-shut-down-on-december-1', 'target')">Read Rockstar Newswire Article</button></marquee>
     <center>      
       <!-- <div class="contentsections">
         <h1 id="v1.1" style="color: crimson;">Boxuga 1.1</h1>
@@ -45,7 +48,7 @@
         
         <p><b>Released: Not Released Yet</b></p>
     </div>-->
-    <div class="contentsections">
+    <div class="contentsections" id="version1content">
         <h1 id="v1">Boxuga Loader Released</h1>
         <p><b>Change Log</b></p>
         <ul>
@@ -54,19 +57,22 @@
             <li>Made Xbox Version</li>
             <li>Fresh start to the modloader</li>
         </ul>
+        <p id="helpv1"></p>
+        <div id="downloadsv1">
         <p><b>Downloads</b></p>
         <button onclick="window.open('https://www.mediafire.com/file/5zknaam7cgxx7zp/tu00000009_00000000/file', 'target')">Xbox 360</button>
         <button  onclick="window.open('https://www.mediafire.com/file/odoggnh8qvbvw9i/update.rpf/file', 'target')">PlayStation 3 </button>
         <button onclick="window.open('https://www.mediafire.com/file/m3yvsf8xwrt0nib/BoxugaLoaderScript.zip/file', 'target')">Script</button>
+    </div>
         <div id="showcasev1">
             <p><b>Showcase</b></p>
-             <iframe alt="Xbox version" width="350" height="200" src="https://www.youtube.com/embed/TwIGpLNDfTc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe alt="PlayStation 3 Version" width="350" height="200" src="https://www.youtube.com/embed/kLCfHwAh5F8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             <iframe alt="Xbox version" width="250vw" height="175vh" src="https://www.youtube.com/embed/TwIGpLNDfTc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe alt="PlayStation 3 Version" width="250vw" height="175vh" src="https://www.youtube.com/embed/kLCfHwAh5F8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
         <p><b>Released: 14th of November 2021</b></p>
         </div>
 
- <div class="contentsections" style="padding-bottom: 0px;">
+ <div class="contentsections" style="padding-bottom: 0px;" id="bottombar">
      <p><b>Boxuga  · <a href="https://twitter.com/boxugah">Twitter</a> · <a href="https://youtube.com/manminecraft">YouTube</a> · <a href="https://discord.gg/RYecxEHUZ5">Discord</a></b></p>
  </div>
 </center>
@@ -74,11 +80,26 @@
 <script type="text/javascript">
 var Showcasev1 = document.getElementById('showcasev1');
 var Discord = document.getElementById('Discord');
-var UnsupportedMarquee = document.getElementById('UnsupportedMarquee');
+var UnsupportedMarquee = document.getElementById('marqueebutton1');
+var downloadsv1 = document.getElementById('downloadsv1');
+var helpv1 = document.getElementById('helpv1');
+var topbar = document.getElementById('topbarmc');
+var v1content = document.getElementById('version1content');
+var bottom = document.getElementById('bottombar');
 if (navigator.platform == "PlayStation 3") {
         Showcasev1.parentNode.removeChild(Showcasev1);
         Discord.parentNode.removeChild(Discord);
         UnsupportedMarquee.parentNode.removeChild(UnsupportedMarquee);
+        helpv1.innerText = "YouTube is not supported thats why the showcases arent here";
+        helpv1.style.color = "gray";
+}
+if (navigator.userAgent.indexOf('Xbox') != -1) { // checks if user is running a xbox
+    alert('This site doesnt really work that well on Xbox 360 Internet Explorer but may work better on Xbox One or Later');
+}
+if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+   topbar.parentNode.removeChild(topbar);
+   v1content.style.clipPath = "inset(0% 0% 0% 0%)"
+   bottom.style.clipPath = "inset(0% 0% 0% 0%)"
 }
 </script>
 </html>
