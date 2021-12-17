@@ -13,7 +13,7 @@
 <body>
     <div class="topbarmc" id="topbarmc">
         <a class="first" href="http://boxuga.ml/#">Boxuga Loader</a>
-        <a href="http://boxuga.ml/installation">Installation</a>
+        <a id="install" href="http://boxuga.ml/installation">Installation</a>
         <div class="dropdown">
             <button>Other Downloads
             </button>
@@ -25,7 +25,7 @@
         <div id="Discord">
             <a style="float: right;" href="#" onclick="window.open('https://discord.gg/RYecxEHUZ5', 'target')">Join The Discord for support</a>
         </div>
-        <div class="dropdown" style="float: right;">
+        <div id="versionsdropdown" class="dropdown" style="float: right;">
             <button>Versions
             </button>
             <div class="dropdown-content">
@@ -93,6 +93,8 @@ var helpv1 = document.getElementById('helpv1');
 var topbar = document.getElementById('topbarmc');
 var v1content = document.getElementById('version1content');
 var bottom = document.getElementById('bottombar');
+var install = document.getElementById('install');
+var verdrop = document.getElementById('versionsdropdown');
 if (navigator.platform == "PlayStation 3") {
         Showcasev1.parentNode.removeChild(Showcasev1);
         Discord.parentNode.removeChild(Discord);
@@ -104,7 +106,8 @@ if (navigator.userAgent.indexOf('Xbox') != -1) { // checks if user is running a 
     alert('This site doesnt really work that well on Xbox 360 Internet Explorer but may work better on Xbox One or Later');
 }
 if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-   topbar.parentNode.removeChild(topbar);
+   install.parentNode.removeChild(install);
+   verdrop.style.float = "left";
    v1content.style.clipPath = "inset(0% 0% 0% 0%)"
    bottom.style.clipPath = "inset(0% 0% 0% 0%)"
 }
