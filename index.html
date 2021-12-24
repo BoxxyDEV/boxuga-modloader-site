@@ -56,7 +56,10 @@
         <button onclick="window.open('https://github.com/BoxxyDEV/Boxuga-ModLoader/releases/download/GTAV/Boxuga.Loader.V2.Xbox.zip', 'target')">Xbox 360</button>
         <button onclick="window.open('https://github.com/BoxxyDEV/Boxuga-ModLoader/releases/download/GTAV/update.rpf', 'target')">PlayStation 3</button>
         <button onclick="window.open('https://github.com/BoxxyDEV/Boxuga-ModLoader/releases/download/GTAV/Scripts.zip', 'target')">Scripts</button>
-        
+                <div id="showcasev2">
+                    <p><b>Showcase</b></p>
+            <iframe alt="PlayStation 3 Version" width="250vw" height="175vh" src="https://www.youtube.com/embed/2fKtsx3IaUc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
         <p><b>Released: 21st of Decemeber 2021</b></p>
     </div>
     <div class="contentsections" id="version1content">
@@ -90,6 +93,7 @@
 </body>
 <script type="text/javascript">
 var Showcasev1 = document.getElementById('showcasev1');
+var Showcasev1 = document.getElementById('showcasev2');
 var Discord = document.getElementById('Discord');
 var UnsupportedMarquee = document.getElementById('marqueebutton1');
 var downloadsv1 = document.getElementById('downloadsv1');
@@ -102,6 +106,7 @@ var install = document.getElementById('install');
 var verdrop = document.getElementById('versionsdropdown');
 if (navigator.platform == "PlayStation 3") {
         Showcasev1.parentNode.removeChild(Showcasev1);
+    Showcasev2.parentNode.removeChild(Showcasev2);
         Discord.parentNode.removeChild(Discord);
         UnsupportedMarquee.parentNode.removeChild(UnsupportedMarquee);
         helpv1.innerText = "YouTube is not supported thats why the showcases arent here";
