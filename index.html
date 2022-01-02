@@ -36,7 +36,7 @@
     </div>
     <marquee>Version 2 Out Now for Xbox 360 and PS3</marquee>
     <center>      
-         <div class="contentsections">
+         <div class="contentsections" id="generalupdatesv1">
             <h1>We are now Hedgehog Menu</h1>
             <p>I rebranded boxuga loader to Hedgehog Menu</p>
             <p>Old releases will still be called boxuga loader</p>
@@ -98,7 +98,7 @@
         </div>
 
  <div class="contentsections" style="padding-bottom: 0px;" id="bottombar">
-     <p><b>Boxuga  · <a href="https://twitter.com/boxugah">Twitter</a> · <a href="https://youtube.com/manminecraft">YouTube</a> · <a href="https://discord.gg/RYecxEHUZ5">Discord</a></b></p>
+     <p><b>Hedgehog Menu  · <a href="https://twitter.com/boxugah">Twitter</a> · <a href="https://youtube.com/manminecraft">YouTube</a> · <a href="https://discord.gg/RYecxEHUZ5">Discord</a></b></p>
  </div>
 </center>
 </body>
@@ -115,6 +115,7 @@ var v2content = document.getElementById('version2content');
 var bottom = document.getElementById('bottombar');
 var install = document.getElementById('install');
 var verdrop = document.getElementById('versionsdropdown');
+var generalupdatesv1 = document.getElementById('generalupdatesv1');
 if (navigator.platform == "PlayStation 3") {
         Showcasev1.parentNode.removeChild(Showcasev1);
     Showcasev2.parentNode.removeChild(Showcasev2);
@@ -133,6 +134,7 @@ if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigat
    v1content.style.clipPath = "inset(0% 0% 0% 0%)"
     v2content.style.clipPath = "inset(0% 0% 0% 0%)"
    bottom.style.clipPath = "inset(0% 0% 0% 0%)"
+    generalupdatesv1.style.clipPath = "inset(0% 0% 0% 0%)"
 }
 </script>
 </html>
