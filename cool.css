@@ -1,5 +1,5 @@
 body {
-    background-image: url(./stonebrick.png);
+    background-image: url(./data/stonebrick.png);
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     z-index: 5;
@@ -9,7 +9,7 @@ body {
 
 .topbarmc { /* navbar */
     overflow: hidden;
-    background-image: url(./grass_side.png);
+    background-image: url(./data/grass_side.png);
     font-family: 'Montserrat', sans-serif;
     }
     
@@ -23,7 +23,7 @@ body {
     }
     
     .topbarmc a.first {
-        background-image: url(./tnt_bottom.png)
+        background-image: url(./data/tnt_bottom.png)
     /* first one that is different color */
     }
 
@@ -32,7 +32,7 @@ body {
     }
 
     .topbarmc a:hover  {
-        background-image: url(./tnt_bottom.png);
+        background-image: url(./data/tnt_bottom.png);
     }
 
 .contentsections {
@@ -81,13 +81,13 @@ body {
   }
   
   .navbar a:hover, .dropdown:hover button {
-    background-image: url(./tnt_bottom.png);
+    background-image: url(./data/tnt_bottom.png);
   }
   
   .dropdown-content {
     display: none;
     position: absolute;
-    background-image: url(./grass_side.png);
+    background-image: url(./data/grass_side.png);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
